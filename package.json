@@ -1,9 +1,9 @@
 {
-  "name": "name-to-user-id",
+  "name": "nick-name",
   "version": "0.0.1",
-  "description": "Create an user id with names",
+  "description": "Create an nickname with names",
   "main": "index.js",
-  "repository": "git@github.com:andersnylund/name-to-user-id.git",
+  "repository": "git@github.com:andersnylund/nick-name.git",
   "author": "Anders Nylund <anders@andersnylund.com>",
   "license": "MIT",
   "private": true,
