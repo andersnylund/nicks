@@ -1,5 +1,4 @@
-import { nickname } from './index';
-import nicknameDefaultImport from './index';
+import nicknameDefaultImport, { nickname } from './index';
 
 describe('nickname', () => {
   it('should handle default import', () => {
