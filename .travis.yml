@@ -3,3 +3,7 @@ node_js:
   - '12'
   - '10'
   - '8'
+script:
+  - yarn run lint
+  - yarn run build
+  - yarn test
