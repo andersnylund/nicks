@@ -1,8 +1,9 @@
 {
   "name": "nick-name",
   "version": "0.0.1",
-  "description": "Create an nickname with names",
-  "main": "index.js",
+  "description": "Create a nickname with names",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
   "repository": "git@github.com:andersnylund/nick-name.git",
   "author": "Anders Nylund <anders@andersnylund.com>",
   "license": "MIT",
@@ -21,6 +22,10 @@
     "typescript": "^3.6.3"
   },
   "scripts": {
+    "build": "tsc",
     "test": "jest"
-  }
+  },
+  "files": [
+    "dist/**/*"
+  ]
 }
