@@ -1,7 +1,14 @@
 {
   "name": "nicks",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Suggests nicknames or user ids from name",
+  "keywords": [
+    "nickname",
+    "username",
+    "user id",
+    "generator",
+    "suggestions"
+  ],
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:andersnylund/nicks.git",
