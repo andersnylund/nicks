@@ -7,7 +7,7 @@ const normalize = (name: string): string =>
     .replace(/[^a-zA-Z ]/g, '') // remove non-numbers and non-letters
     .replace(/\s{2,}/g, ' '); // remove extra spaces
 
-export const nicknames = (name: string) => {
+export const nicks = (name: string) => {
   let suggestions: string[] = [];
   const normalizedName = normalize(name);
   const parts: string[] = normalizedName.split(' ');
@@ -33,4 +33,4 @@ export const nicknames = (name: string) => {
   return suggestions;
 };
 
-export default nicknames;
+export default nicks;

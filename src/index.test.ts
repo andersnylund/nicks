@@ -1,24 +1,24 @@
-import nicknamesDefaultImport, { nicknames } from './index';
+import nicksDefaultImport, { nicks } from './index';
 
-describe('nicknames', () => {
+describe('nicks', () => {
   it('should handle default import', () => {
-    expect(nicknamesDefaultImport('')).toEqual([]);
+    expect(nicksDefaultImport('')).toEqual([]);
   });
 
   it('should not return anything with an empty string', () => {
-    expect(nicknames('')).toEqual([]);
+    expect(nicks('')).toEqual([]);
   });
 
   it('should handle special latin characters', () => {
-    expect(nicknames('á.èíđßöå')).toEqual(['aaeioa', 'aeioaa', 'aeiaei']);
+    expect(nicks('á.èíđßöå')).toEqual(['aaeioa', 'aeioaa', 'aeiaei']);
   });
 
   it('should give suggestion based on one name', () => {
-    expect(nicknames('Matti')).toEqual(['mmatti', 'mattim', 'matmat']);
+    expect(nicks('Matti')).toEqual(['mmatti', 'mattim', 'matmat']);
   });
 
   it('should give suggestions based on two names', () => {
-    expect(nicknames('Matti Meikäläinen-Muukalainen')).toEqual([
+    expect(nicks('Matti Meikäläinen-Muukalainen')).toEqual([
       'mmeika',
       'meikam',
       'matmei',
@@ -27,7 +27,7 @@ describe('nicknames', () => {
   });
 
   it('should handle double spaces', () => {
-    expect(nicknames('Matti  Meikäläinen')).toEqual([
+    expect(nicks('Matti  Meikäläinen')).toEqual([
       'mmeika',
       'meikam',
       'matmei',
@@ -36,7 +36,7 @@ describe('nicknames', () => {
   });
 
   it('should handle more than two names', () => {
-    expect(nicknames('Matti Meikäläinen Muukalainen')).toEqual([
+    expect(nicks('Matti Meikäläinen Muukalainen')).toEqual([
       'mmuuka',
       'muukam',
       'matmuu',
