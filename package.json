@@ -1,13 +1,13 @@
 {
   "name": "nick-name",
   "version": "0.0.1",
-  "description": "Create a nickname with names",
+  "description": "Create a nickname or user id with names",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "repository": "git@github.com:andersnylund/nick-name.git",
   "author": "Anders Nylund <anders@andersnylund.com>",
   "license": "MIT",
-  "private": true,
+  "private": false,
   "devDependencies": {
     "@types/jest": "^24.0.18",
     "@types/node": "^12.7.5",
