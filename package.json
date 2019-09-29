@@ -1,10 +1,10 @@
 {
-  "name": "nick-name",
+  "name": "nick-names",
   "version": "0.0.1",
-  "description": "Create a nickname or user id with names",
+  "description": "Suggests nicknames or user ids from name",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
-  "repository": "git@github.com:andersnylund/nick-name.git",
+  "repository": "git@github.com:andersnylund/nick-names.git",
   "author": "Anders Nylund <anders@andersnylund.com>",
   "license": "MIT",
   "private": false,
